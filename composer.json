@@ -1,0 +1,22 @@
+{
+  "name": "yiiauth/gitlab",
+  "description": "GitLab OAuth2 for yii2-authclient",
+  "keywords": ["yii2", "authclient", "oauth", "gitlab"],
+  "homepage": "http://github.com/yiiauth/gitlab",
+  "require": {
+    "php": "^7.0",
+    "yiisoft/yii2-authclient": "~2.1"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dmitriy Kuts (ExileeD)",
+      "email": "me@exileed.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "yiiauth\\gitlab\\": "src"
+    }
+  }
+}
