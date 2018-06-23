@@ -39,15 +39,15 @@ class GitLabClient extends OAuth2
     /**
      * {@inheritdoc}
      */
-    public $authUrl = '%domain%/oauth/authorize';
+    public $authUrl = '/oauth/authorize';
     /**
      * {@inheritdoc}
      */
-    public $tokenUrl = '%domain%/oauth/token';
+    public $tokenUrl = '/oauth/token';
     /**
      * {@inheritdoc}
      */
-    public $apiBaseUrl = '%domain%/api/v4/';
+    public $apiBaseUrl = '/api/v4/';
 
     /**
      * Domain instance gitlab
@@ -62,10 +62,10 @@ class GitLabClient extends OAuth2
     public function init()
     {
         parent::init();
-
-        $this->authUrl    = str_replace('%domain%', $this->domain, $this->authUrl);
-        $this->tokenUrl   = str_replace('%domain%', $this->domain, $this->tokenUrl);
-        $this->apiBaseUrl = str_replace('%domain%', $this->domain, $this->apiBaseUrl);
+        
+        $this->authUrl    = $this->domain.$this->authUrl;
+        $this->tokenUrl   = $this->domain.$this->tokenhUrl;
+        $this->apiBaseUrl = $this->domain.$this->apiBaseUrl;
     }
 
     /**
