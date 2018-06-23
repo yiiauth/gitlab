@@ -64,7 +64,7 @@ class GitLabClient extends OAuth2
         parent::init();
         
         $this->authUrl    = $this->domain.$this->authUrl;
-        $this->tokenUrl   = $this->domain.$this->tokenhUrl;
+        $this->tokenUrl   = $this->domain.$this->tokenUrl;
         $this->apiBaseUrl = $this->domain.$this->apiBaseUrl;
     }
 
