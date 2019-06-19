@@ -48,7 +48,10 @@ class GitLabClient extends OAuth2
      * {@inheritdoc}
      */
     public $apiBaseUrl = '/api/v4/';
-
+    /**
+     * {@inheritdoc}
+     */
+    public $scope = 'read_user';
     /**
      * Domain instance gitlab
      * @var string
@@ -62,7 +65,7 @@ class GitLabClient extends OAuth2
     public function init()
     {
         parent::init();
-        
+
         $this->authUrl    = $this->domain.$this->authUrl;
         $this->tokenUrl   = $this->domain.$this->tokenUrl;
         $this->apiBaseUrl = $this->domain.$this->apiBaseUrl;
