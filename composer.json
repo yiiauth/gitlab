@@ -4,6 +4,7 @@
   "keywords": ["yii2", "authclient", "oauth", "gitlab"],
   "homepage": "http://github.com/yiiauth/gitlab",
   "require": {
+    "php": "~7.3 || 8.0",
     "yiisoft/yii2-authclient": "~2.1"
   },
   "license": "MIT",
@@ -17,5 +18,11 @@
     "psr-4": {
       "yiiauth\\gitlab\\": "src"
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
 }
