@@ -40,7 +40,7 @@ and add the GitLab client to your auth clients.
         'clients' => [
                'gitlab' => [
                    'class' => \yiiauth\gitlab\GitLabClient::class,
-                   'domain'  => 'https://gitlab.com'
+                   'domain'  => 'https://gitlab.com',
                    'clientId' => 'gitlab_client_id',
                    'clientSecret' => 'gitlab_client_secret',
                ],
